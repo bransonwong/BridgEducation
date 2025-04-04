@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BridgeEd - Connecting Students with Quality Tutors</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 🔷 HEADER -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">Bridge<span>Ed</span></div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#online-learning">Online Learning</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" onclick="openModal('loginModal')">Sign In</a></li>
+          <li><a href="#" class="btn" onclick="openModal('registerModal')">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🔷 HERO SECTION -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Building Bridges in Education</h1>
+        <p>Connecting qualified student tutors with learners for affordable, high-quality personalized online education</p>
+        <div class="btn-group">
+          <a href="#" class="btn" onclick="openModal('findTutorModal')">Find a Tutor</a>
+          <a href="#" class="btn btn-secondary" onclick="openModal('becomeTutorModal')">Become a Tutor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔷 ABOUT SECTION -->
+  <section id="about">
+    <div class="container">
+      <h2>About BridgeEd</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>BridgeEd was founded with a simple but powerful mission: to make quality education accessible and affordable for all students while providing valuable earning opportunities for college students with academic expertise.</p>
+          <p>Our platform bridges this gap by connecting students with top-performing college students who have excelled in their respective subjects.</p>
+          <p>Through our innovative online platform, we've eliminated geographical barriers, allowing students to connect with qualified tutors from anywhere in the world.</p>
+        </div>
+        <div class="about-image">
+          <img src="https://via.placeholder.com/500x400" alt="Students learning online">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔷 ONLINE LEARNING SECTION -->
+  <section id="online-learning" style="background-color: #f0f7ff;">
+    <div class="container">
+      <h2>Online Learning Experience</h2>
+      <div class="online-learning">
+        <div class="online-learning-item">
+          <div class="online-learning-image">
+            <img src="https://via.placeholder.com/600x400" alt="Zoom class">
+          </div>
+          <div class="online-learning-content">
+            <h3>Seamless Zoom Integration</h3>
+            <p>Most BridgeEd sessions take place through Zoom with interactive whiteboards, screen sharing, and collaborative documents.</p>
+            <a href="#" class="btn" style="margin-top: 20px;">Learn More</a>
+          </div>
+        </div>
+
+        <div class="online-learning-item">
+          <div class="online-learning-image">
+            <img src="https://via.placeholder.com/600x400" alt="AI assistant">
+          </div>
+          <div class="online-learning-content">
+            <h3>24/7 AI Learning Assistant</h3>
+            <p>Our AI chatbot provides instant academic support anytime you need it—perfect for late-night study grinds.</p>
+            <a href="#" class="btn" style="margin-top: 20px;">Try Our AI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔷 HOW IT WORKS -->
+  <section id="how-it-works" style="background-color: #f5f9ff;">
+    <div class="container">
+      <h2>How BridgeEd Works</h2>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
+          <h3>For Students</h3>
+          <p>Access top tutors easily and affordably. Select your subject, match, and schedule—all in one place.</p>
+          <button class="btn" onclick="openModal('findTutorModal')">Find a Tutor</button>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👨‍🏫</div>
+          <h3>For Tutors</h3>
+          <p>Earn by teaching what you love. Set your schedule, choose your rates, and grow your resume.</p>
+          <button class="btn btn-secondary" onclick="openModal('becomeTutorModal')">Become a Tutor</button>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>Our Platform</h3>
+          <p>Video, chat, scheduling, payments—all in one streamlined, secure system built for learning.</p>
+          <button class="btn" onclick="openModal('platformModal')">Explore Platform</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔷 FOOTER -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>BridgeEd</h3>
+          <p>Building a better future through accessible education, worldwide.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#online-learning">Online Learning</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Get in Touch</h3>
+          <ul>
+            <li>Email: info@bridged.edu</li>
+            <li>Phone: (503) 555-1234</li>
+            <li>Portland, OR</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 BridgeEd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 🔷 CHAT ICON -->
+  <div class="chat-icon" onclick="toggleChat()">💬</div>
+  <div class="chat-modal" id="chatModal">
+    <div class="chat-header">
+      <h3>BridgeEd Assistant</h3>
+      <button class="chat-close" onclick="toggleChat()">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="message bot-message">Hi there! I'm the BridgeEd AI assistant. How can I help you today?</div>
+    </div>
+    <div class="chat-input-container"></div>
+  </div>
+
+  <!-- 🔓 MODALS (LOGIN/REGISTER/ETC) -->
+  <!-- Copy modal code from previous steps and paste here before this line -->
+
+  <script src="js/script.js"></script>
+</body>
+</html>
